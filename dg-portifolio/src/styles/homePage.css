@@ -1,0 +1,79 @@
+
+#Div-homepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 20vh;
+    flex-wrap: wrap;
+
+    color: aliceblue;
+    z-index: 1;
+
+    margin-bottom: 25vw;
+}
+
+#ModelDiv-homepage {
+    width: 37.5vw;
+    min-width: 250px;
+}
+
+#ColumnDiv-homepage {
+    font-size: 1.4rem;
+    min-width: 250px;
+}
+
+#ColumnDiv-homepage h4 {
+    font-size: 1.3rem;
+}
+
+#titleH1-homepage {
+    font-family: Moonhouse;
+    font-size: 10rem;
+    margin: 0px;
+    word-break: break-word;
+
+    letter-spacing: 0.05em;
+    line-height: 0.9;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1150px) {
+    #Div-homepage {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    #ModelDiv-homepage, #ColumnDiv-homepage {
+        width: 90vw;
+        min-width: unset;
+    }
+    #titleH1-homepage {
+        font-size: 6rem;
+    }
+
+}
+
+@media (max-width: 750px) {
+    #Div-homepage {
+        margin-top: 30vh;
+        margin-bottom: 25vh;
+    }
+    #ModelDiv-homepage, #ColumnDiv-homepage {
+        width: 98vw;
+    }
+    #titleH1-homepage {
+        font-size: 2.7rem;
+    }
+    
+    #ColumnDiv-homepage {
+        font-size: 1rem;
+    }
+    #ColumnDiv-homepage h2 {
+        margin-bottom: 10vh;
+    }
+    #ColumnDiv-homepage h4 {
+        font-size: 0.9rem;
+    }
+}

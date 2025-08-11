@@ -1,0 +1,64 @@
+
+#background-homepage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -10;
+    /* Remove flex so it doesn't affect layout */
+}
+
+#background-homepage::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.18);
+    z-index: 1;
+    pointer-events: none;
+}
+
+#background-homepage h1 {
+    font-size: 14vw;
+    color: rgba(255, 255, 255, 0.035);
+    text-align: left;
+    font-family: Moonhouse, sans-serif;
+    font-weight: bold;
+    line-height: 0.65;
+    user-select: none;
+    pointer-events: none;
+    margin: 10px 25px;
+    padding: 0;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.15);
+    width: 100vw;
+    white-space: pre-line;
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: -9;
+}
+
+@media (max-width: 900px) {
+    #background-homepage h1 {
+        font-size: 18vw;
+        margin: 5px 10px;
+        text-align: center;
+        line-height: 0.8;
+    }
+}
+
+@media (max-width: 600px) {
+    #background-homepage h1 {
+        font-size: 22vw;
+        margin: 0;
+        text-align: center;
+        line-height: 0.9;
+    }
+}
+

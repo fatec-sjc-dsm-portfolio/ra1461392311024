@@ -1,0 +1,256 @@
+#projectsDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  color: aliceblue;
+  margin-bottom: 15vh;
+}
+
+/* Responsive column widths */
+#textColumnDiv-projects {
+  width: 35vw;
+  min-width: 280px;
+  max-width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  
+  
+}
+
+#textColumnDiv-projects h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  text-align: start;
+}
+
+#titleDiv-projects {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#tagsDiv-projects span {
+  margin: 10px;
+  padding: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+#textDiv-projects {
+  width: 100%;
+  overflow-y: auto;
+  letter-spacing: 0.05em;
+  font-size: 1.2rem;
+}
+
+#buttonsDiv-projects {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 10px;
+}
+
+#buttonsDiv-projects button {
+  width: 85%;
+  padding: 8px;
+  margin: 0px 2px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#modelColumnDiv-projects {
+  width: 45vw;
+  min-width: 280px;
+  max-width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#keyColumnDiv-projects {
+  width: 15vw;
+  min-width: 180px;
+  max-width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#toolsDiv-projects li {
+  font-style: normal;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  list-style: none;
+  background-color: rgb(240, 248, 255, 0.2);
+  font-size: 1.2rem;
+}
+
+#titleH2-projects {
+  text-align: center;
+  margin-top: 5%;
+  font-family: 'Moonhouse', sans-serif;
+  font-size: 6rem;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+}
+
+@media (max-width: 1750px) and (min-width: 1210px) {
+  #projectsDiv {
+    flex-wrap: wrap;
+  }
+
+  #projectsDiv div {
+    width: 45vw;
+    height: auto;
+ 
+  }
+  #tagsDiv-projects {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+  }
+
+  #modelColumnDiv-projects canvas {
+    width: 40vw;
+    height: 60vh;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+  #projectsDiv {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2vh;
+  }
+  #textColumnDiv-projects,
+  #modelColumnDiv-projects,
+  #keyColumnDiv-projects {
+    width: 90vw;
+    height: auto;
+    min-height: 180px;
+    margin: 1.5rem ;
+    box-sizing: border-box;
+  }
+  #modelColumnDiv-projects {
+    height: 60vh;
+    flex-direction: column-reverse;
+  }
+  #toolsDiv-projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #toolsDiv-projects ul {
+    width: 90%;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 5px 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #toolsDiv-projects li {
+    width: 90%;
+  }
+  #buttonsDiv-projects {
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 520px) and (min-width: 320px) {
+  #titleH2-projects {
+    font-size: 2rem;
+    margin-top: 3%;
+  }
+  #projectsDiv {
+    margin-top: 2vh;
+    gap: 1vh;
+  }
+  #tagsDiv-projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #tagsDiv-projects span {
+    font-size: 0.8rem;
+    line-height: 2rem;
+  }
+  #textColumnDiv-projects,
+  #modelColumnDiv-projects,
+  #keyColumnDiv-projects {
+    width: 90vw;
+    min-width: 0;
+    max-width: 100vw;
+    padding: 0 2vw;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+  }
+  #modelColumnDiv-projects {
+    flex-direction: column-reverse;
+    width: 90vw;
+    height: 40vh;
+  }
+  #titleDiv-projects {
+    font-size: 1.2rem;
+  }
+  #toolsDiv-projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #toolsDiv-projects ul {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  #toolsDiv-projects li {
+    font-size: 0.95rem;
+    padding: 7px;
+    margin: 8px 2px;
+    width: 85%;
+  }
+  #buttonsDiv-projects {
+    width: 95%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #buttonsDiv-projects button {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 780px) {
+  #modelColumnDiv-projects {
+    display: none !important;
+  }
+}
